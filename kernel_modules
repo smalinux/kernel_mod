@@ -1,0 +1,38 @@
+https://www.youtube.com/watch?v=bDnq792OsQg
+google: task_struct kernel module
+
+-----------------------------------------------------------------------------------------------
+
+5m:
+	- el videos well be nice frist
+	- https://www.youtube.com/playlist?list=PL16941B715F5507C5
+	- https://blog.sourcerer.io/writing-a-simple-linux-kernel-module-d9dc3762c234
+	http://haifux.org/lectures/86-sil/kernel-modules-drivers/kernel-modules-drivers.html
+	https://www.youtube.com/watch?v=U5G_rT-GwPE
+	https://www.youtube.com/watch?v=juGNPLdjLH4
+	https://www.youtube.com/watch?v=Zn8mEZXr6nE
+	http://derekmolloy.ie/writing-a-linux-kernel-module-part-1-introduction/
+	https://www.cyberciti.biz/faq/add-remove-list-linux-kernel-modules/
+
+midd:
+	https://www.udemy.com/course/linux-kernel-module-programming/learn/lecture/6761312#overview
+	https://www.youtube.com/playlist?list=PL2GL6HVUQAuksbptmKC7X4zruZlIl59is
+	https://www.youtube.com/watch?v=kwoLPe1xz08
+	https://www.youtube.com/playlist?list=PL16941B715F5507C5
+	https://www.youtube.com/playlist?list=PL1zwAXk5ZrWKxLyCq73lzFn3oSLruM750
+	https://www.youtube.com/watch?v=VOXYNRLlqPg
+	https://www.youtube.com/watch?v=9CMm2719seM
+
+long:
+	http://tldp.org/LDP/lkmpg/2.6/html/lkmpg.html
+	https://lwn.net/Kernel/LDD3/						(Most important reference after linux kernel source code)
+
+-----------------------------------------------------------------------------------------------
+Commands
+	$ dmesg							; == terminal
+	$ dmesg -c 						; clear
+	$ sudo insmod xxx.ko			; insert module
+	$ sudo rmmod xxx.ko
+	$ mknod							; touch for special files
+-----------------------------------------------------------------------------------------------
+#include<linux/module>
