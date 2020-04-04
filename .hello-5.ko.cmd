@@ -1,0 +1,1 @@
+cmd_/home/smalinux/kernel_mod/hello-5.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/smalinux/kernel_mod/hello-5.ko /home/smalinux/kernel_mod/hello-5.o /home/smalinux/kernel_mod/hello-5.mod.o;  true
