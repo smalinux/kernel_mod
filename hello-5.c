@@ -1,5 +1,6 @@
 /*
  *  hello-5.c - Demonstrates command line argument passing to a module.
+ $ insmod hello-5.ko mystring="bebop" mybyte=255 myintArray=-1
  */
 #include <linux/module.h>
 #include <linux/moduleparam.h>
@@ -8,7 +9,7 @@
 #include <linux/stat.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Peter Jay Salzman");
+MODULE_AUTHOR("Sohaib <sohaibfacebook396@gmail.com>");
 
 static short int myshort 	= 1;
 static int myint 			= 420;

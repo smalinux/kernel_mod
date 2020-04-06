@@ -1,14 +1,19 @@
 ##----------------------- 
 # Uncomment one line only:
 ##----------------------- 
+######## Working ########
 # program = hello
-# program = hello-5  # insmod hello-5.ko mystring="bebop" mybyte=255 myintArray=-1
-program = hello
+# program = hello-5
+# program = simple_keylogger
+# program = task_struct
 
+######## Not Working ########
+# program = syscall_mkdir
+# program = keylogger_1
+# program = smash_MBR
+program = task_struct_id
 
 obj-m:= $(program).o
-
-
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
