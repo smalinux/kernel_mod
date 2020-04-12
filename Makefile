@@ -2,16 +2,17 @@
 # Uncomment one line only:
 ##----------------------- 
 ######## Working ########
-# program = hello
+program = hello
 # program = hello-5
 # program = simple_keylogger
 # program = task_struct
+program = current
 
 ######## Not Working ########
 # program = syscall_mkdir
 # program = keylogger_1
 # program = smash_MBR
-program = task_struct_id
+# program = task_struct_id
 
 obj-m:= $(program).o
 
