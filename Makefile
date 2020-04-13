@@ -2,11 +2,14 @@
 # Uncomment one line only:
 ##----------------------- 
 ######## Working ########
-program = hello
+# program = hello
 # program = hello-5
 # program = simple_keylogger
 # program = task_struct
-program = current
+# program = current
+# program = scull
+# program = chardev
+program = printk
 
 ######## Not Working ########
 # program = syscall_mkdir
@@ -18,7 +21,7 @@ obj-m:= $(program).o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
-
+# 	mknod smalinux_node c 10 100 || exit 0
 
 # insert
 i:
