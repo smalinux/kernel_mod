@@ -9,13 +9,13 @@
 # program = current
 # program = scull
 # program = chardev
-program = printk
+# program = my_printk
+program = sma_task_struct_id_7
 
 ######## Not Working ########
 # program = syscall_mkdir
 # program = keylogger_1
 # program = smash_MBR
-# program = task_struct_id
 
 obj-m:= $(program).o
 
