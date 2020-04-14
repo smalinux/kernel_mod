@@ -10,7 +10,8 @@
 # program = scull
 # program = chardev
 # program = my_printk
-program = sma_task_struct_id_7
+# program = sma_task_struct_id_7
+program = sma_list
 
 ######## Not Working ########
 # program = syscall_mkdir

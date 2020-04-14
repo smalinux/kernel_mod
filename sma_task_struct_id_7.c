@@ -13,15 +13,20 @@
 // #include <linux/sched.h>        // for_each_process, pr_info
 
 #include <linux/proc_fs.h>
-#include<linux/sched.h>
+#include <linux/sched.h>
+#include <linux/cred.h>
+#include <linux/tty.h>
+#include <linux/signal_types.h>
+#include <linux/signal.h>
 
 #include <linux/pid_namespace.h>
 
-int         p_id = 63392;
+int         p_id = 158533;
 struct      pid *pid_struct;
 struct      task_struct *task, *child;
 struct      list_head *list;
 char        tty[64];
+
 
 static void list_task_struct(void) {
     printk(KERN_WARNING "================ Basic Info ================\n");
@@ -32,10 +37,10 @@ static void list_task_struct(void) {
     printk(KERN_INFO "Flags = %u\n", task->flags);
 
 
-    printk(KERN_INFO "User ID = %d\n", task->cred->uid);
+    printk(KERN_INFO "UID = %d\n", task->cred->uid);
 
     
-    // printk(KERN_INFO "TTY = %s\n", task->signal->tty.tty); ???? 
+    // printk(KERN_INFO "TTY = %s\n", task->signal->tty.tty);
     
 
     /*if (task->state == 0) // runnable
