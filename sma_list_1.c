@@ -1,23 +1,37 @@
+/*
+*
+* sma_ is a prefix
+*/
+
 #include <linux/module.h>
 #include <linux/kernel.h>
-#include <linux/list.h> 
+#include <linux/list.h>
 
-#include <linux/proc_fs.h>
-#include<linux/sched.h>
+struct sma_names {
+    struct list_head list;
+    char name[20];
+};
 
-#include <linux/pid_namespace.h>
 
-int         p_id = 1;
-struct      pid *pid_struct;
-struct      task_struct *task, *child;
-struct      list_head *list;
-char        tty[64];
+int c = 0;
 
 static void sma_list(void) {
     printk(KERN_WARNING "============================================\n");
 
+    struct list_head sma_names;
 
+    INIT_LIST_HEAD(&sma_names);
 
+    struct list_head h1;
+
+    list_add(&h1, &sma_names);
+
+    struct list_head *listptr;
+    // struct sma_names *entry;
+
+    list_for_each(listptr, &sma_names) {
+        printk("Item %d", ++c);
+    }
 
 
 

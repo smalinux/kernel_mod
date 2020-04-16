@@ -21,7 +21,7 @@
 
 #include <linux/pid_namespace.h>
 
-int         p_id = 158533;
+int         p_id = 1;
 struct      pid *pid_struct;
 struct      task_struct *task, *child;
 struct      list_head *list;
@@ -145,3 +145,7 @@ MODULE_LICENSE("GPL");
 module_init(proc_init);
 module_exit(proc_cleanup);
 
+/*
+References:
+    https://www.spinics.net/lists/newbies/msg11186.html
+*/
