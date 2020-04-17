@@ -79,6 +79,9 @@ shortprint.c 		-- A version of the "short" driver which drives a parallel printe
 	LDDD
 ========================================================================
 
+LDDD Source Code:
+	https://github.com/PacktPublishing/Linux-Device-Drivers-Development
+
 
 Color imgs of this book:
 	https://static.packt-cdn.com/downloads/LinuxDeviceDriversDevelopment_ColorImages.pdf

@@ -1,29 +1,33 @@
-##----------------------- 
-# Uncomment one line only:
-##----------------------- 
-######## Working ########
-# program = hello
-# program = hello-5
-# program = simple_keylogger
-# program = task_struct
-# program = current
-# program = scull
-# program = chardev
-# program = my_printk
-# program = sma_task_struct_id_2
-# program = sma_list
-# program = kdatasize
-# program = sma_sys
-# program = sma_timer
-# program = ~sma_jiffies
-# program = sma_list_ex2
+
+# Set module name from the list:
+program = sma_skeleton
+
+
+# 'The list'
+#----------
+obj-m += sma_skeleton.o
+# obj-m += hello.o
+# obj-m += hello-5.o
+# obj-m += simple_keylogger.o
+# obj-m += task_struct.o
+# obj-m += current.o
+# obj-m += scull.o
+# obj-m += chardev.o
+# obj-m += my_printk.o
+# obj-m += sma_task_struct_id_2.o
+# obj-m += sma_list.o
+# obj-m += kdatasize.o
+# obj-m += sma_sys.o
+# obj-m += sma_timer.o
+# obj-m := sma_jiffies.o
+# obj-m := sma_list_ex2.o
 
 ######## Not Working ########
 # program = syscall_mkdir
 # program = keylogger_1
 # program = smash_MBR
 
-obj-m:= $(program).o
+
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
@@ -32,7 +36,7 @@ all:
 
 # insert
 i:
-	insmod $(program).ko
+	insmod $(program).ko 		# Try 'modprobe' in near future
 
 # remove
 r:
@@ -56,7 +60,10 @@ rmnod:
 
 # Cleaning the code style
 style:
-	/home/smalinux/Downloads/linux-5.6.3/scripts/Lindent $(program).c 
+	/home/smalinux/Downloads/linux-5.6.3/scripts/Lindent $(program).c
+
+info:
+	modinfo $(program).ko 			#userspace program prints .modinfo section
 
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
