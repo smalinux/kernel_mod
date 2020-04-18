@@ -1,11 +1,12 @@
 
 # Set module name from the list:
-program = sma_skeleton
+program = sma_chardev
 
 
 # 'The list'
 #----------
-obj-m += sma_skeleton.o
+obj-m += sma_chardev.o
+# obj-m += sma_skeleton.o
 # obj-m += hello.o
 # obj-m += hello-5.o
 # obj-m += simple_keylogger.o

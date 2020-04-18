@@ -12,6 +12,9 @@ newbies							https://www.spinics.net/lists/newbies/msg11186.html
 PLKA 							https://www.amazon.com/dp/0470343435
 UtLK							Understanding the Linux Kernel
 LDDD							9781785280009
+Nice blogspot 					https://tuxthink.blogspot.com/2012/05/working-of-macros-majorminor-and-mkdev.html
+read this nice example 			https://github.com/lvming/sample-modules/blob/master/sample-misc.c
+
 
 
 task_struct:
