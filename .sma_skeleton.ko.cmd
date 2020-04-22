@@ -1,1 +1,0 @@
-cmd_/root/kernel_mod/sma_skeleton.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /root/kernel_mod/sma_skeleton.ko /root/kernel_mod/sma_skeleton.o /root/kernel_mod/sma_skeleton.mod.o;  true

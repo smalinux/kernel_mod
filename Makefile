@@ -1,11 +1,12 @@
 
 # Set module name from the list:
-program = sma_chardev
+program = sma_usb
 
 
 # 'The list'
 #----------
-obj-m += sma_chardev.o
+obj-m += sma_usb.o
+# obj-m += sma_chardev.o
 # obj-m += sma_skeleton.o
 # obj-m += hello.o
 # obj-m += hello-5.o
@@ -37,15 +38,21 @@ all:
 
 # insert
 i:
-	insmod $(program).ko 		# Try 'modprobe' in near future
+# 	depmod -ae 			https://stackoverflow.com/a/34800857/5688267
+	cp $(program).ko /lib/modules/$(shell uname -r)/
+	sudo modprobe $(program)
 
 # remove
 r:
-	rmmod $(program)
+	modprobe -r $(program)
+	rm /lib/modules/$(shell uname -r)/$(program).ko
 
 # print
 p:
 	dmesg
+
+l:
+	lsmod | grep $(program)
 
 # clear dmesg
 c:
