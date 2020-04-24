@@ -1,5 +1,8 @@
 Must to read this 				https://github.com/cirosantilli/linux-kernel-module-cheat
 Very cute series 				https://embetronicx.com/tutorials/linux/device-drivers/linux-device-driver-part-1-introduction/
+
+
+
 List of all kernel DS:			https://docs.huihoo.com/doxygen/linux/kernel/3.7/annotated.html
 Linux Kernel APIs				https://www.kernel.org/doc/htmldocs/kernel-api/index.html
 Linked List 					https://web.archive.org/web/20190215080058/http://isis.poly.edu/kulesh/stuff/src/klist/
@@ -133,11 +136,19 @@ fs.h 									struct file
 
 thread_info.h
 list.h
+proc_fs.h
+uaccess.h
+slab.h
+string.h
+
+
+
 
 platform_device.h
 mod_devicetable.h
 
 
+========================================================================
 
 0.  platform devices == on-chip devices (SoC) == USB, I2S, I2C, UART, SPI, PCI, SATA, and so on.
 0.  pseudo platform bus == platform bus
@@ -175,6 +186,51 @@ linux/scripts/:
 
 
 # initramfs ?
+
+
+========================================================================
+	End LDDD
+========================================================================
+
+= kernelnewbies
+	= Kernelnewbies mailing list Archives : http://lists.kernelnewbies.org/pipermail/kernelnewbies/
+
+
+Rasbiry pi:
+	Book: Mastering embedded linux programming-Cris simmeds
+	Book: Embedded linux development using yotco progict Cookbook
+	Book: Mastering linux kernel development 
+--------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

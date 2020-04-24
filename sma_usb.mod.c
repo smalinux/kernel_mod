@@ -24,6 +24,6 @@ MODULE_INFO(retpoline, "Y");
 
 MODULE_INFO(depends, "");
 
-MODULE_ALIAS("usb:v0930p6544d*dc*dsc*dp*ic*isc*ip*in*");
+MODULE_ALIAS("usb:v045Ep0800d*dc*dsc*dp*ic*isc*ip*in*");
 
-MODULE_INFO(srcversion, "9EF7D3759D55FCDFF4FE01D");
+MODULE_INFO(srcversion, "985BAF99E9DC81912CA53F0");

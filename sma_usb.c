@@ -5,8 +5,8 @@
 #include <linux/usb/input.h>
 #include <linux/hid.h>
 
-#define MY_USB_VENDOR_ID 0x0930
-#define MY_USB_PRODUCT_ID 0x6544
+#define MY_USB_VENDOR_ID 0x045e
+#define MY_USB_PRODUCT_ID 0x0800
 static struct usb_device_id my_usb_table[] = {
        { USB_DEVICE(MY_USB_VENDOR_ID, MY_USB_PRODUCT_ID) },
        {},
