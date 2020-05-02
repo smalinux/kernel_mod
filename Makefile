@@ -1,11 +1,15 @@
 
 # Set module name from the list:
-program = sma_usb
+program = sma_fs
 
 
 # 'The list'
 #----------
-obj-m += sma_usb.o
+obj-m += sma_fs.o
+# obj-m += sma_interrupt.o
+# obj-m += sma_kfifo.o
+# obj-m += sma_mutex.o
+# obj-m += sma_usb.o
 # obj-m += sma_chardev.o
 # obj-m += sma_skeleton.o
 # obj-m += hello.o
@@ -39,12 +43,11 @@ all:
 # insert
 i:
 # 	depmod -ae 			https://stackoverflow.com/a/34800857/5688267
-	cp $(program).ko /lib/modules/$(shell uname -r)/
-	sudo modprobe $(program)
+	sudo insmod $(program).ko
 
 # remove
 r:
-	modprobe -r $(program)
+	rmmod $(program)
 	rm /lib/modules/$(shell uname -r)/$(program).ko
 
 # print
