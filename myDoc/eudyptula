@@ -1,0 +1,27 @@
+Task 01			Done.
+Task 02			Done.			Build custom kernel
+Task 03			-
+Task 04 		Done.			CodeStyle
+Task 05			Done.			USB probe & disconnect
+Task 06			Done.			char dev
+Task 07			-				Documentation/development-process/  && i think this is about making ur module built-in the kernel.
+Task 08			Done.			debugfs - jiffies - locking hint
+Task 09			Done.			Documentation/kobject.txt 		&& 		sysfs eudyptula : /sys/kernel/eudyptula
+Task 10			-				Wow!, my frist kernel patch, I'm an "official" kernel developer!
+Task 11			-				driver patch..
+Task 12			-				linked lists
+Task 13 		-				kmem_cache_alloc() and kmem_cache_free() - /proc/slabinfo - ldd3 ch08
+Task 14			-				all member to task_struct()
+Task 15 		-				create a new syscall!
+Task 16 		-				'sparse' tool - fixing logical issues.  You are a real developer now, fixing real bugs!
+Task 17			-				Enhance the kernel module - kernel thread
+Task 18			-				easy.. easy..
+Task 19			-				Networking filters: etfilter kernel module
+Task 20			-				data loss on a filesystem ))
+
+
+
+
+
+
+

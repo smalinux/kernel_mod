@@ -36,6 +36,8 @@ ________________________________________________________________________________
 						> Automaticall append version: *
 
 04 $ vi .config 					; to view the created config file
+	set CONFIG_LOCALVERSION_AUTO=y
+	set CONFIG_DEBUG_FS
 ----
 It will be nice if you have more than one pocessor to use ... to speen up your work
 05 $ cat /proc/cpuinfo   > see processor, if = 0 menus you have one processor, 1 == 2 processor ...
