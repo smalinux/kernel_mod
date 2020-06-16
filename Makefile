@@ -1,11 +1,11 @@
 
 # Set module name from the list:
-program = sma_fs
+program = sma_atomic1
 
 
 # 'The list'
 #----------
-obj-m += sma_fs.o
+# obj-m += sma_fs.o
 # obj-m += sma_interrupt.o
 # obj-m += sma_kfifo.o
 # obj-m += sma_mutex.o
@@ -27,6 +27,7 @@ obj-m += sma_fs.o
 # obj-m += sma_timer.o
 # obj-m := sma_jiffies.o
 # obj-m := sma_list_ex2.o
+obj-m := sma_atomic1.o
 
 ######## Not Working ########
 # program = syscall_mkdir
@@ -48,7 +49,7 @@ i:
 # remove
 r:
 	rmmod $(program)
-	rm /lib/modules/$(shell uname -r)/$(program).ko
+# 	rm /lib/modules/$(shell uname -r)/$(program).ko
 
 # print
 p:

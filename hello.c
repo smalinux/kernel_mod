@@ -23,7 +23,7 @@ module_exit(sma_bye);
 
 /** MODULE_
 */
-MODULE_AUTHOR("Sohaib (smalinux) <sohaibfacebook396@gmail.com>");
+MODULE_AUTHOR("Sohaib (smalinux) <xunilams@gmail.com>");
 MODULE_VERSION("1.0");
 MODULE_DESCRIPTION("hello Description");
 // MODULE_ALIAS();

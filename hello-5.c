@@ -9,7 +9,7 @@
 #include <linux/stat.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Sohaib <sohaibfacebook396@gmail.com>");
+MODULE_AUTHOR("Sohaib <xunilams@gmail.com>");
 
 static short int myshort 	= 1;
 static int myint 			= 420;

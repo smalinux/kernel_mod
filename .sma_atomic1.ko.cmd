@@ -1,0 +1,1 @@
+cmd_/root/kernel_mod/sma_atomic1.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /root/kernel_mod/sma_atomic1.ko /root/kernel_mod/sma_atomic1.o /root/kernel_mod/sma_atomic1.mod.o;  true

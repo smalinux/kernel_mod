@@ -220,7 +220,7 @@ module_exit(sma_exit);
 
 /** MODULE_
 */
-MODULE_AUTHOR("Sohaib (smalinux) <sohaibfacebook396@gmail.com>");
+MODULE_AUTHOR("Sohaib (smalinux) <xunilams@gmail.com>");
 MODULE_INFO(mylove,"Coffee & programming");	/* :D */
 MODULE_VERSION("1.0");
 MODULE_DESCRIPTION("I'm trying to make module acts like ps -aux command.\

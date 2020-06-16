@@ -134,8 +134,11 @@ struct permissions{
 
 
 
-
-
+Google:
+	seccomp
+	bpf filters
+	ebpf linux kernel
+	read about System-V
 
 
 

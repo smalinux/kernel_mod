@@ -40,5 +40,5 @@ MODULE_PARM_DESC(name, "Just prints your cute name!");
 MODULE_VERSION("1.0");
 MODULE_INFO(love,"Aya Mohammed <+2010xxxxxxx>"); 	// Random Name :P
 MODULE_DESCRIPTION("Basic Module");
-MODULE_AUTHOR("Sohaib <sohaibfacebook396@gmail.com>");
+MODULE_AUTHOR("Sohaib <xunilams@gmail.com>");
 MODULE_LICENSE("GPL");
