@@ -47,8 +47,8 @@ It will be nice if you have more than one pocessor to use ... to speen up your w
 	08 $ make -j 2 modules			; will compile el modules ..
 	10 $ times (make -j 2 bzImage && make modules)
 
-11 $ make istall
-12 $ make -j4 modules_install		; to see if modules add or not: cd /lib/modules
+11 $ sudo make install
+12 $ sudo make -j4 modules_install		; to see if modules add or not: cd /lib/modules
 
 13 $ dracut -f /boot/initramfs xxxx 		; where xxxx >  cd /lib/modules
 ______________________________________________________________________________________________________________________________
