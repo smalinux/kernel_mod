@@ -12,6 +12,10 @@ ________________________________________________________________________________
 ---	mainline version:	> 	[browse]
 	git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 
+
+cp -v /boot/config-$(uname -r) .config
+
+
 02 	$ make menuconfig				; selects all normal defaults and create config file
 -- 	$ make oldconfig 				; takes your current confing from /dev
   	$ make config 					; the hard way - will ask you for evey single option
