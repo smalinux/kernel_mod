@@ -1,5 +1,7 @@
 Compile kernel:
 
+https://www.cyberciti.biz/tips/compiling-linux-kernel-26.html
+
 sudo apt-get -y update
 sudo apt-get -y install openssh-server  ## this is not needed but I installed to have easy ssh to my test machine from my Macbook.
 sudo apt-get -y install libssl-dev
