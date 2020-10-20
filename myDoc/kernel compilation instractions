@@ -30,7 +30,7 @@ cp -v /boot/config-$(uname -r) .config
   	$ make randconfig				; pick random options - this for testers only
   	$ make localyesconfig
 
-03 $ menuconfig > enable loadable module support
+03 $ make menuconfig > enable loadable module support
 ----	> Forced module loading option: enable it
 		< back
 		> file systems > DOS/FAT/NT Filesystems 
