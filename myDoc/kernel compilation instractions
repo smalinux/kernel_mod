@@ -48,7 +48,7 @@ cp -v /boot/config-$(uname -r) .config
 It will be nice if you have more than one pocessor to use ... to speen up your work
 05 $ cat /proc/cpuinfo   > see processor, if = 0 menus you have one processor, 1 == 2 processor ...
 ---
-06 $ make -j 2 bzImage && make modules
+06 $ make -j $(nproc) bzImage && make -j $(nproc) modules
 ---	07 $ make -j 2 bzImage			; make core only ; 2 = 2threads for 1 processor, if you have 2 processor then use 4
 	08 $ make -j 2 modules			; will compile el modules ..
 	10 $ times (make -j 2 bzImage && make modules)
