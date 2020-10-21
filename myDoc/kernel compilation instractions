@@ -59,11 +59,11 @@ It will be nice if you have more than one pocessor to use ... to speen up your w
 
 12 $ sudo make install
 
-13 $ dracut -f /boot/initramfs xxxx 		; where xxxx >  cd /lib/modules
+
 ______________________________________________________________________________________________________________________________
 Grub
-14 $ grub2-mkconfig -o /boot/grup2/grub.cfg
-
+# 14 $ grub2-mkconfig -o /boot/grup2/grub.cfg
+14 $ sudo grub2-mkconfig -o "$(readlink -e /etc/grub2.conf)"
 
 If your system not booted properly
 ______________________________________________________________________________________________________________________________
@@ -82,42 +82,6 @@ ________________________________________________________________________________
 
 
 
-Void linux
-================================================================================
-xbps-install bc wget
-
-wget https://www.kernel.org/pub/linux/kernel/v3.x/testing/linux-3.18-rc2.tar.xz
-
-tar xf linux-3.18-rc2.tar.xz
-
-cd linux-3.18-rc2
-
-cp /boot/config-3.17.1_1 .config
-
-make -j8 (hit the enter key until meet the shell)
-
-make modules_install firmware_install
-
-ls /lib/modules/
-
-3.17.1_1  3.18.0-rc2_1
-
-sudo cp System.map /boot/System.map-3.18.0-rc2_1
-
-sudo cp arch/x86/boot/bzImage /boot/vmlinuz-3.18.0-rc2_1
-
-sudo cp .config /boot/config-3.18.0-rc2_1
-
-sudo dracut -f initramfs-3.18.0-rc2_1.img 3.18.0-rc2_1
-
-sudo cp initramfs-3.18.0-rc2_1.img /boot/
-
-sudo update-grub
-
-reboot and test
-
-uname -a
-============================================================================
 
 
 
