@@ -59,8 +59,6 @@ It will be nice if you have more than one pocessor to use ... to speen up your w
 
 12 $ sudo make install
 
-
-______________________________________________________________________________________________________________________________
 Grub
 # 14 $ grub2-mkconfig -o /boot/grup2/grub.cfg
 14 $ sudo grub2-mkconfig -o "$(readlink -e /etc/grub2.conf)"
@@ -68,14 +66,11 @@ Grub
 If your system not booted properly
 ______________________________________________________________________________________________________________________________
 
-cp /boot/config-4.2.0-27-generic .config    ## Check if your boot has the same config as mine or replace with the appropriate version.
-make menuconfig
 
+Google: show grub menu startup fedora
+	sudo vim /boot/grub2/grub.cfg >> find line: "set timeout_style=hidden"
+		change to: set timeout_style=visible
 
-______________________________________________________________________________________________________________________________
-; Google, initramfs best
-; Google: dracut
-______________________________________________________________________________________________________________________________
 
 
 
