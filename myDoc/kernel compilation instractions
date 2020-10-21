@@ -71,6 +71,7 @@ Google: show grub menu startup fedora
 	sudo vim /boot/grub2/grub.cfg >> find line: "set timeout_style=hidden"
 		change to: set timeout_style=visible
 
+Google: Change boot order in dual boot Fedora grub
 
 
 
